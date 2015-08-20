@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Blocks: A simple website structure.</title>
+   <style>
+      
+      /* Lazy universal reset */
+
+      * {
+         margin: 0;
+         padding: 0;
+         font-family: sans-serif;
+      }
+      
+      /* Mobile styles */
+
+      .block {}
+
+      .inner-block {
+         padding: 24px;
+      }
+
+      /* Tablet styles */
+
+      @media screen and (min-width: 768px) {
+         .block {}
+
+         .inner-block {
+            padding: 36px;
+         }
+      }
+
+      /* Desktop styles */
+
+      @media screen and (min-width: 1024px) {
+         .block {}
+
+         .inner-block {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 48px;
+         }
+      }
+
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="block">
+         <div class="inner-block">
+            <h1>Blocks</h1>
+            <p>A simple website structure.</p>
+            <p>It's goal is to center your content on the page.</p>
+            <p>The .inner-block decleration defines the width of the page.</p>
+            <p>Stack blocks down the page.</p>
+            <p>Enjoy.</p>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
