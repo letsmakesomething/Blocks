@@ -8,7 +8,7 @@
    padding: 24px;
 }
 
-.row-inner *:last-child {
+.row-inner > *:last-child {
    padding-bottom: 0; /* Make sure the last element doesn't add extra padding-bottom to your row */
 }
 
