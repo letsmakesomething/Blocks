@@ -3,61 +3,50 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width">
-   <title>Blocks: A simple website structure.</title>
-   <style>
-      
-      /* Lazy universal reset */
-
-      * {
-         margin: 0;
-         padding: 0;
-         font-family: sans-serif;
-      }
-      
-      /* Mobile styles */
-
-      .block {}
-
-      .inner-block {
-         padding: 24px;
-      }
-
-      /* Tablet styles */
-
-      @media screen and (min-width: 768px) {
-         .block {}
-
-         .inner-block {
-            padding: 36px;
-         }
-      }
-
-      /* Desktop styles */
-
-      @media screen and (min-width: 1024px) {
-         .block {}
-
-         .inner-block {
-            width: 1024px;
-            margin: 0 auto;
-            padding: 48px;
-         }
-      }
-
-   </style>
+   <title>Rows, A Simple Website Structure.</title>
+   <link rel="stylesheet" href="reset.css">
+   <link rel="stylesheet" href="rows.css">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="typography.css">
 </head>
 <body>
    <div class="container">
-      <div class="block">
-         <div class="inner-block">
-            <h1>Blocks</h1>
-            <p>A simple website structure.</p>
-            <p>It's goal is to center your content on the page.</p>
-            <p>The .inner-block decleration defines the width of the page.</p>
-            <p>Stack blocks down the page.</p>
-            <p>Enjoy.</p>
+
+      <header class="row">
+         <div class="row-inner">
+            <h1>Rows, a simple website structure.</h1>
          </div>
-      </div>
-   </div>
+      </header>
+
+      <section class="row">
+         <div class="row-inner">
+            <p>Its goal is to center your content in the browser window while allowing you to extend background colors, borders and images to the edge of the page.</p>
+            <div class="browser">
+               <div class="browser-title-bar">
+                  <div class="browser-button"></div>
+                  <div class="browser-button"></div>
+                  <div class="browser-button"></div>
+               </div>
+               <div class="browser-window">
+                  <div class="browser-row">
+                     <div class="browser-row-inner"></div>
+                  </div>
+               </div>
+            </div> <!-- end browser -->
+            <p>The .row div extends to the edge of the browser window, and the .row-inner div centers horizontally within the browser window.</p>
+            <p>Add background colors, images and styles to the .row div.</p>
+            <p>Add your main content to the .row-inner div.</p>
+            <p>If you do not want your page to extend to the edge of the browser, you can wrap your content in a .container div and define its width.</p>
+            <p>Stack rows down the page and do whatever you like inside them.</p>
+         </div>
+      </section>
+
+      <footer class="row">
+         <div class="row-inner">
+            <p><strong>Enjoy.</strong></p>
+         </div>
+      </footer>
+
+   </div> <!-- end container -->
 </body>
 </html>

@@ -1,0 +1,35 @@
+/* Mobile styles */
+
+.row {
+   background-color: #fff;
+}
+
+.row-inner {
+   padding: 24px;
+}
+
+.row-inner *:last-child {
+   padding-bottom: 0; /* Make sure the last element doesn't add extra padding-bottom to your row */
+}
+
+/* Tablet styles */
+
+@media screen and (min-width: 768px) {
+   .row {}
+
+   .row-inner {
+      padding:  48px 36px;
+   }
+}
+
+/* Desktop styles */
+
+@media screen and (min-width: 1024px) {
+   .row {}
+
+   .row-inner {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 64px 48px;
+   }
+}

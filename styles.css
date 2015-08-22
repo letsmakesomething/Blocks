@@ -1,0 +1,55 @@
+/* Mobile styles */
+
+body {
+   background-color: #efefef;
+}
+
+header.row,
+footer.row {
+   background-color: #efefef;
+}
+
+.browser {
+   max-width: 400px;
+   margin: 0 auto 32px;
+}
+
+.browser-title-bar {
+   border-radius: 4px 4px 0 0;
+   background-color: #ddd;
+   border-top: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   padding: 3px;
+}
+.browser-button {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius: 10px;
+   background-color: gray;
+}
+.browser-window {
+   border: 1px solid #ddd;
+}
+.browser-row {
+   border: 1px solid red;
+   background-color: pink;
+}
+.browser-row-inner {
+   width: 60%;
+   margin: 0 auto;
+   padding: 250px 0;
+   border: 1px solid blue;
+   background-color: cyan;
+}
+
+/* Tablet styles */
+
+@media screen and (min-width: 768px) {
+}
+
+/* Desktop styles */
+
+@media screen and (min-width: 1024px) {
+}
