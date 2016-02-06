@@ -1,7 +1,43 @@
 # Rows
 
-A versital solution for centering content in the browser window. It works well because it gives you the ability to extend background colors, borders and images to the browser window's edge.
+Stack rows of varying widths down the page.
 
-Stack the rows down the page as you see fit.
+## CSS
 
-This repository also serves as a place to document layouts that are compatible with this solution.
+	/* Mobile */
+
+	.row {
+	}
+
+	.row-inner {
+	   max-width: 900px; /* Define default width */
+	   margin: 0 auto; /* Center content */
+	   padding: 24px;
+	}
+
+	.row-inner > *:last-child {
+	   padding-bottom: 0; /* Remove bottom padding from last element for consistent spacing */
+	}
+
+	/* Tablet */
+
+	@media screen and (min-width: 768px) {
+	   .row-inner {
+	      padding:  48px 36px;
+	   }
+	}
+
+	/* Desktop */
+
+	@media screen and (min-width: 1024px) {
+	   .row-inner {
+	      padding: 64px 48px;
+	   }
+	}
+
+## HTML
+
+	<section class="row">
+	 <div class="row-inner">
+	 </div>
+	</section>
